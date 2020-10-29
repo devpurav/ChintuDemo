@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "chintu-demo"
+    }
+  },
+  "defaultProject": "chintu-demo",
+  "cli": {
+    "analytics": "6051b092-987b-4906-9855-d9b7c4173863"
+  }
 }

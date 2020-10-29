@@ -1,0 +1,156 @@
+@charset "utf-8";
+  *:focus {
+    outline: none;
+}
+  .centerrow{
+    background-color: #0F0E0E;
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    transform: translate(0px, -50%);
+  }
+[class*="fontawesome-"]:before {
+font-family: 'FontAwesome', sans-serif;
+}
+* {
+box-sizing: border-box;
+margin:0px auto;
+&:before,
+&:after {
+box-sizing: border-box;
+}
+}
+body {
+color: #606468;
+font: 87.5%/1.5em 'Open Sans', sans-serif;
+margin: 0;
+}
+a {
+color: #EEE;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+input {
+border: none;
+font-family: 'Open Sans', Arial, sans-serif;
+font-size: 14px;
+line-height: 2em;
+padding: 0;
+-webkit-appearance: none;
+}
+p {
+line-height: 1.5em;
+}
+.clearfix {
+*zoom: 1;
+&:before,
+&:after {
+content: ' ';
+display: table;
+}
+&:after {
+clear: both;
+}
+}
+.container {
+left: 50%;
+position: fixed;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+#login > p {
+text-align: center;
+}
+#login > p span {
+padding-left: 5px;
+}
+.middle {
+display: flex;
+width: 600px;
+align-items: center;
+}
+@media only screen and (max-width:620px) {
+.login, .logo {
+width:50%;
+}
+}
+.bg-white{
+  background-color: #7bc4c7 !important; 
+  border-radius: 5px;
+}
+.loginfont{
+  font-size: 1.5em;
+  color: white;
+}
+.loginbutton{
+  background-color: #338BA4;
+   border-radius: 5px;
+   color: white;
+   font-size: 1.2em;
+   width: 100%;
+}
+.boxwidth{
+  width: 100%;
+}
+.right-round{
+  border-radius: 0px 5px 5px 0px !important;
+}
+.left-round{
+  border-radius: 5px 0px 0px 5px !important;
+}
+#borderleft{
+  border-left: 0px !important;
+  background-color: #1e5b6c  !important;
+}
+@media screen and (max-width: 767px) {
+  #borderleft{
+    border-left: 0px;
+  }
+}
+.logocircle{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  .form-control{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px;
+  }
+  .input-group-prepend .btn, .input-group-append .btn{
+    position: relative;
+    z-index: 2;
+    border-radius: 0px;
+  }
+  .help-block{
+    color: black !important;
+  }
+  .p--0{
+      padding: 0px !important;
+    }
+  .m--0{
+      margin: 0px !important;
+  }
+  .btn-secondary{
+      border: 0px !important;
+  }
+  .bg-white {
+        background-color: #338BA4 !important;
+        border-radius: 5px;
+    }
+.ani{
+  animation-name: example;
+  animation-duration: 1s; 
+  animation-fill-mode: both;
+}
+@keyframes example {
+  from {top: -150px; }
+  to {top: 50%;}
+}
